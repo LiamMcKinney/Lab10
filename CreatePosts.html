@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+</head>
+<body>
+    <form action="CreatePosts.php" method="post" onsubmit="if(document.getElementsByName('content')[0].value == '') {alert('Post may not be empty'); return false} return true">
+        Username: <input name="username" type="text" /><br>
+        Post: <textarea name="content"></textarea> <br>
+        <input type="submit"/>
+    </form>
+</body>
+</html>
